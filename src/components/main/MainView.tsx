@@ -22,7 +22,12 @@ import { ModToolsView } from '../mod-tools/ModToolsView';
 import { NavigatorView } from '../navigator/NavigatorView';
 import { NitropediaView } from '../nitropedia/NitropediaView';
 import { RightSideView } from '../right-side/RightSideView';
+import { BattlePassView } from '../battle-pass/BattlePassView';
+import { BrowserNotificationsView } from '../browser-notifications/BrowserNotificationsView';
+import { DailyStreakView } from '../daily-streak/DailyStreakView';
+import { DeviceFingerprintView } from '../device-fingerprint/DeviceFingerprintView';
 import { RoomView } from '../room/RoomView';
+import { StaffMfaView } from '../staff-mfa/StaffMfaView';
 import { ToolbarView } from '../toolbar/ToolbarView';
 import { UserProfileView } from '../user-profile/UserProfileView';
 import { UserSettingsView } from '../user-settings/UserSettingsView';
@@ -107,6 +112,11 @@ export const MainView: FC<{}> = props =>
             <CampaignView />
             <GameCenterView />
             <FloorplanEditorView />
+            <StaffMfaView />
+            <DailyStreakView />
+            <BrowserNotificationsView />
+            <DeviceFingerprintView />
+            <BattlePassView />
         </Base>
     );
 }
